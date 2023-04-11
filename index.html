@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <script src="javascript.js" defer></script>
+    <title>My Library</title>
+  </head>
+  <body>
+    <div class="content">
+      <div class="backdrop" style="display:none">
+        <div class="add-book-card">
+          <form action="/#" method="post">
+            <legend style="align-self: center; font-size: 1.5rem">
+              New Book
+            </legend>
+            <div>
+              <label for="title">Name: </label>
+              <input type="text" id="book-name" name="title" required style="width:100%" />
+            </div>
+            <div>
+              <label for="author">Author: </label>
+              <input type="text" id="book-author" name="author" required/>
+            </div>
+            <div>
+              <label for="pages">Number of pages: </label>
+              <input type="number" id="book-pages" name="pages" required style="width:3.5rem"/>
+            </div>
+            <div>
+              <label for="alreadyread">Number of pages read: </label>
+              <input type="number" id="readalready" name="alreadyread" required style="width:3.5rem"/>
+            </div>
+            <div>
+              <label for="url"
+                ><em style="color: grey">optional /</em>Add a book cover with
+                a link from the internet :</label
+              >
+              <input
+                type="url"
+                id="addurl"
+                name="url"
+                placeholder="example: https://your-image-link.com/something.jpg"
+              />
+            </div>
+            <button type="submit">Add</button>
+          </form>
+        </div>
+      </div>
+      <div class="backdrop2" style="display:none">
+        <div class="information">
+        </div>
+      </div>
+      <div class="backdrop3" style="display:none">
+        <div class="editbookcard">
+
+        </div>
+      </div>
+      <div class="header">
+        <img src="resources/iconbooks.png">
+        <div
+          style="text-align: center; font-size: xxx-large;" id="title"
+        >
+          MY LIBRARY
+        </div>
+        <img src="resources/iconbooks.png">
+      </div>
+      <div class="center">
+        <div class="wrap">
+          <div
+            style="color:white;text-align: center; font-size: 3rem;align-self: center;margin-left:1rem; font-family: dancing-words;"
+          >
+            List of Books:
+          </div>
+          <button id="add">Add book</button>
+        </div>
+        <div class="display"></div>
+      </div>
+    </div>
+  </body>
+</html>
